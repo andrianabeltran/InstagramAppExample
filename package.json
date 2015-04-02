@@ -1,6 +1,6 @@
 {
   "name": "mywebapp",
-  "version": "0.0.1",
+  "version": "2.5.1",
   "author": "Andriana Beltran Romero",
   "scripts": {
     "start": "node app.js"
