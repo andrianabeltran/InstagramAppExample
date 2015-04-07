@@ -1,31 +1,22 @@
 {
-  "name": "assignment0abr",
-  "version": "1.0.0",
-  "description": "For COGS121 Assignment 0.",
-  "main": "app.js",
-  "dependencies": {
-    "express": "^3.20.2",
-    "dotenv": "^1.1.0",
-    "express3-handlebars": "^0.5.2",
-    "instagram-node-lib": "^0.1.1",
-    "mongodb": "^2.0.25",
-    "passport-facebook": "^2.0.0",
-    "mongoose": "^4.0.1",
-    "passport": "^0.2.1",
-    "passport-twitter": "^1.0.3"
-  },
-  "devDependencies": {},
+  "name": "mywebapp",
+  "version": "0.0.1",
+  "author": "Chu Shao",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/andrianabeltran/InstagramAppExample.git"
+  "dependencies": {
+    "express": "3.x",
+    "express3-handlebars": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-facebook": "*",
+    "passport-twitter": "*",
+    "dotenv": "*",
+    "instagram-node-lib": "*"
   },
-  "author": "Andriana Beltran Romero",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/andrianabeltran/InstagramAppExample/issues"
-  },
-  "homepage": "https://github.com/andrianabeltran/InstagramAppExample"
+  "engines": {
+    "node": "0.10.x"
+  }  
 }
