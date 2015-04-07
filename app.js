@@ -4,10 +4,6 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
 var app = express();
-
-//load environment variables
-var dotenv = require('dotenv');
-dotenv.load();
 //route for hashtag
 var hashtag = require('./routes/hashtag');
 var index = require('./routes/index');
@@ -15,17 +11,7 @@ var index = require('./routes/index');
 var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/instagramexample');
 
-//add instagram api setup
-var ig = require('instagram-node-lib');
-ig.set('client_id', process.env.instagram_client_id);
-ig.set('client_secret', process.env.instagram_client_secret);
-ig.tags.info({
-	name:'sushi',
-	complete: function(data) {
-		console.log(data);
-	}
-});
-//Configures the Template engine (middleware)
+//Configures the Template engine
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
 app.set('views', __dirname + '/views');
